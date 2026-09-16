@@ -167,6 +167,15 @@
 
 /* Landscape mobile */
 @media (max-height: 500px) and (orientation: landscape) {
+  .header {
+    height: 50px;
+    padding-bottom: 0;
+  }
+  .header__logo-img { height: 35px; }
+  .nav__link { font-size: 14px; padding: 4px 10px; }
+  .nav__list { padding-top: 0; }
+  .header__social { padding-top: 0; }
+  .header__social-link svg { width: 14px; height: 14px; }
   .header.is-scrolled {
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(12px);

@@ -84,4 +84,15 @@
   .paris__subtitle { font-size: 16px; }
   .paris__letter p { font-size: 16px; }
 }
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .paris { min-height: auto; padding: 40px 0; }
+  .paris__container { grid-template-columns: 1fr; transform: none; padding: 0 2rem; }
+  .paris__spacer { display: none; }
+  .paris__title { font-size: 32px; }
+  .paris__subtitle { font-size: 14px; }
+  .paris__letter { max-width: 100%; }
+  .paris__letter p { font-size: 14px; line-height: 1.6; margin-bottom: 1rem; }
+}
 </style>
