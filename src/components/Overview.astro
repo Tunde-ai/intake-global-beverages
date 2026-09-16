@@ -1,0 +1,73 @@
+<!-- ═══ 7. Overview ═══ -->
+<section class="overview" id="overview">
+  <div class="overview__bg" style="background-image: url('/assets/textures/water-texture.jpg');"></div>
+  <div class="overview__overlay"></div>
+  <div class="overview__content container fade-in">
+    <h2 class="overview__heading">Overview</h2>
+    <p class="overview__text">InTake Global &amp; Beverages is a Florida-based, independently owned and operated company founded in 2023 by creative philanthropist Xavier X. Artis. Committed to social causes, the company is guided by its motto, &ldquo;InTake is not just products, it&rsquo;s the promise of progress,&rdquo; focusing on education, wellness, and raising awareness. Its flagship products, InTake Energy + Water drinks, along with custom and limited-edition white label offerings, are designed to support and promote diversity within the beverage industry globally.</p>
+    <div class="overview__video-wrap">
+      <video class="overview__video" controls preload="metadata">
+        <source src="/assets/video/intake-aromatech.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<style>
+.overview {
+  position: relative;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+.overview__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--overview-fallback);
+}
+@supports (-webkit-touch-callout: none) {
+  .overview__bg { background-attachment: scroll; }
+}
+.overview__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--overview-overlay);
+}
+.overview__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.overview__heading {
+  font-family: var(--font-heading);
+  font-size: 83px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+.overview__text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 33px;
+  color: var(--white);
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+.overview__video-wrap {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+.overview__video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .overview__heading { font-size: 48px; }
+  .overview__text { font-size: 16px; line-height: 26px; }
+}
+</style>

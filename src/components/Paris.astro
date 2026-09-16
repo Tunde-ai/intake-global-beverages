@@ -1,0 +1,87 @@
+<!-- ═══ 6. InTake Paris — Apricot Mist ═══ -->
+<section class="paris fade-in" id="paris">
+  <div class="paris__bg" style="background-image: url('/assets/campaign/eiffel-tower-bw.jpg');"></div>
+  <div class="paris__overlay"></div>
+  <div class="paris__container container">
+    <div class="paris__content">
+      <h2 class="paris__title">InTake Paris - Apricot Mist</h2>
+      <p class="paris__subtitle">Eyes of Paris, La Ville aux Mille Regards (The City of a Thousand Gazes)</p>
+      <div class="paris__letter">
+        <p>Dear Parisians,</p>
+        <p>What better way to pay homage to the <strong>City of Love</strong> than a beverage that reflects the most magical time of the day&mdash;golden hour. This beverage carries you through a love story where <strong>Dusk meets Dawn.</strong></p>
+        <p>Sourced from the woodlands of Brittany lies the <strong>wild beauty&mdash;</strong>elderflower (Dawn). Long used for aromatic oils and seasonal remedies, French elderflower holds a natural elegance: subtle and seasonal&hellip; almost understated. Its modest notes are the kind a gentleman&rsquo;s palate would admire.</p>
+        <p>Hailing from the valleys of Roussillon lies <strong>southern warmth</strong>&mdash;apricot (Dusk). Often associated with stone-washed villages, French abricot brings brightness and charm to Rh&ocirc;ne Valley summers. Apricot is nostalgic and <strong>quietly luxurious&mdash;very southern-French</strong> in spirit. Its warm notes are the kind a lady&rsquo;s palate would adore.</p>
+        <p>As southern warmth journeyed through the day, the wild beauty journeyed through the night. When they met, it was connection at first sight. All of the <strong>Eyes of Paris</strong> lit, glowing as they lay watch, each seeing in the other what they themselves could not. The sun shed tears of joy in the form of dew, pouring from the blades of leaves, watering the taste of Apricot Mist.<br>With Love,</p>
+        <p class="paris__closing">&hellip;La Ville Lumi&egrave;re</p>
+      </div>
+    </div>
+    <div class="paris__spacer"></div>
+  </div>
+</section>
+
+<style>
+.paris {
+  position: relative;
+  min-height: 1156px;
+  padding: 100px 0;
+  overflow: hidden;
+}
+.paris__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--paris-fallback);
+}
+.paris__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-black);
+}
+.paris__container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 63% 37%;
+  max-width: 1250px;
+  transform: translateX(-100px);
+}
+.paris__title {
+  font-family: var(--font-heading);
+  font-size: 59px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.paris__subtitle {
+  font-family: var(--font-accent);
+  font-size: 23px;
+  font-weight: 500;
+  color: #489FB4;
+  margin-bottom: 2rem;
+}
+.paris__letter {
+  max-width: 737px;
+}
+.paris__letter p {
+  font-family: var(--font-form);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+.paris__closing {
+  font-style: italic;
+  color: #489FB4 !important;
+}
+
+@media (max-width: 768px) {
+  .paris { min-height: auto; padding: 60px 0; }
+  .paris__container { grid-template-columns: 1fr; transform: none; padding: 0 1.5rem; }
+  .paris__spacer { display: none; }
+  .paris__title { font-size: 36px; }
+  .paris__subtitle { font-size: 16px; }
+  .paris__letter p { font-size: 16px; }
+}
+</style>

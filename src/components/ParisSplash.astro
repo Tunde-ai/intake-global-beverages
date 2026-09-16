@@ -1,0 +1,26 @@
+<!-- ═══ Paris Splash Can ═══ -->
+<section class="paris-splash" id="paris-splash">
+  <img src="/assets/images/paris-splash-can.png" alt="InTake Paris Apricot Mist — two cans splashing in water" class="paris-splash__img">
+  <div class="paris-splash__tint"></div>
+</section>
+
+<style>
+.paris-splash {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  z-index: 1;
+}
+.paris-splash__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: saturate(0.95);
+}
+.paris-splash__tint {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 39, 87, 0.25);
+  pointer-events: none;
+}
+</style>

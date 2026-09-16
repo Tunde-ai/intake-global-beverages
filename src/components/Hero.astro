@@ -1,0 +1,57 @@
+<!-- ═══ 2. Hero ═══ -->
+<section class="hero" id="hero">
+  <div class="hero__video-wrap">
+    <video class="hero__video" autoplay muted loop playsinline poster="/assets/video/waterfall-poster.jpg">
+      <source src="/assets/video/waterfall-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+  </div>
+  <div class="hero__logo fade-in-up">
+    <img src="/assets/logos/intake-energy-glass-new.png" alt="InTake — Energy + Water">
+  </div>
+</section>
+
+<style>
+.hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero__video-wrap {
+  position: absolute;
+  inset: 0;
+}
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+}
+.hero__logo {
+  position: relative;
+  z-index: 2;
+  width: 1227px;
+  max-width: 90%;
+}
+.hero__logo img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .hero { aspect-ratio: 4 / 3; }
+  .hero__logo { width: 260px; }
+}
+</style>

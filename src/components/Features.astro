@@ -1,0 +1,257 @@
+<!-- ═══ 3. Mission + Features + Marquee ═══ -->
+<section class="features" id="mission">
+  <div class="features__bg" style="background-image: url('/assets/textures/water-texture.jpg');"></div>
+  <div class="features__overlay"></div>
+
+  <!-- 3.1 Mission Quote -->
+  <div class="mission fade-in">
+    <p class="mission__quote">&ldquo;The purpose of our existence is to increase energy, impact progress, and reflect growth&rdquo;</p>
+    <div class="mission__divider"></div>
+    <div class="speech-bubble">
+      <h2 class="mission__heading">WHAT YOU INTAKE?</h2>
+      <div class="speech-bubble__tail"></div>
+    </div>
+  </div>
+
+  <!-- 3.2 Feature Columns -->
+  <div class="features__columns container">
+    <div class="features__col fade-in-up">
+      <img src="/assets/icons/WYintake-rain-drop.png" alt="Hydration" class="features__icon">
+      <h2 class="features__title">HYDRATION</h2>
+      <div class="features__divider"></div>
+      <p class="features__body">InTake Energy + Water enhances the hydration experience for its consumers by making it more convenient and flavorful. (Provides Sodium chloride &amp; coconut water powder)</p>
+    </div>
+    <div class="features__col fade-in-up">
+      <img src="/assets/icons/WYintake-bolt.png" alt="Energy" class="features__icon">
+      <h2 class="features__title">ENERGY</h2>
+      <div class="features__divider"></div>
+      <p class="features__body">InTake features a blend of organic compounds, including magnesium citrate, potassium citrate, calcium lactate, and vitamins B12, B6 and C which work synergistically.</p>
+    </div>
+    <div class="features__col fade-in-up">
+      <img src="/assets/icons/WYintake-increase.png" alt="Increase" class="features__icon">
+      <h2 class="features__title">INCREASE</h2>
+      <div class="features__divider"></div>
+      <p class="features__body">InTake incorporates naturally sourced caffeine derived from fruits, leaves, and coffee beans, delivering the finest offerings from the Natural Resource. (50 mg of Caffeine)</p>
+    </div>
+    <div class="features__col fade-in-up">
+      <img src="/assets/icons/WYintake-cane-sugar.png" alt="Sweeteners" class="features__icon">
+      <h2 class="features__title">SWEETENERS</h2>
+      <div class="features__divider"></div>
+      <p class="features__body">InTake is sweetened with natural sugar cane juice, allulose, and citric acid, carefully blended to deliver great taste while maintaining a refreshingly lower calorie content.</p>
+    </div>
+  </div>
+
+  <!-- 3.3 Marquee -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span class="marquee__text">LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull;&nbsp;</span>
+      <span class="marquee__text">LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull;&nbsp;</span>
+    </div>
+  </div>
+</section>
+
+<style>
+.features {
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  margin-top: -200px;
+  padding-top: 250px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+}
+.features__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@supports (-webkit-touch-callout: none) {
+  .features__bg { background-attachment: scroll; }
+}
+.features__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-black);
+}
+
+/* Mission */
+.mission {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 7rem 2rem 5rem;
+}
+.mission__quote {
+  font-family: 'Raleway', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 80px;
+  color: var(--white);
+  max-width: 95%;
+  margin: 0 auto 10rem;
+}
+.mission__divider {
+  width: 90px;
+  height: 2px;
+  background: var(--divider-light);
+  margin: 0 auto 5rem;
+}
+/* Speech bubble — matched to original glass-pill */
+.speech-bubble {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.10) 45%,
+    rgba(255, 255, 255, 0.03) 55%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 2.5rem 4rem;
+  box-shadow:
+    0 2px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+/* Tail — two descending circles */
+.speech-bubble__tail::before,
+.speech-bubble__tail::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.10) 45%,
+    rgba(255, 255, 255, 0.03) 55%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.speech-bubble__tail::before {
+  width: 30px;
+  height: 30px;
+  bottom: -18px;
+  left: 18%;
+}
+.speech-bubble__tail::after {
+  width: 18px;
+  height: 18px;
+  bottom: -38px;
+  left: 14%;
+}
+.mission__heading {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Feature Columns */
+.features__columns {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 1rem 6rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.features__col {
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  border-right: 1px solid var(--column-rule);
+}
+.features__col:last-child { border-right: none; }
+.features__icon {
+  width: auto;
+  height: 130px;
+  object-fit: contain;
+  margin: 0 auto 2rem;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+}
+.features__title {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1.25rem;
+  letter-spacing: 2px;
+}
+.features__divider {
+  width: 65px;
+  height: 2px;
+  background: var(--divider-light);
+  margin: 0 auto 1.25rem;
+}
+.features__body {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.7;
+}
+
+/* Marquee */
+.marquee {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 10px 0;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.marquee__track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 120s linear infinite;
+}
+.marquee__text {
+  font-family: var(--font-heading);
+  font-size: 68px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  color: var(--white);
+  flex-shrink: 0;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .mission { padding: 4rem 1.5rem 3rem; }
+  .mission__quote { font-size: 24px; line-height: 38px; margin-bottom: 3rem; }
+  .mission__heading { font-size: 32px; }
+  .speech-bubble { padding: 1.5rem 2rem; }
+  .features__columns { grid-template-columns: 1fr; }
+  .features__col { border-right: none; border-bottom: 1px solid var(--column-rule); padding: 2rem 1rem; }
+  .features__col:last-child { border-bottom: none; }
+  .features__icon { height: 90px; }
+  .features__title { font-size: 36px; }
+  .features__body { font-size: 16px; }
+  .marquee__text { font-size: 30px; letter-spacing: 4px; }
+  .marquee { height: auto; }
+}
+</style>
