@@ -228,4 +228,15 @@
   .shop__arrow--next { right: 5px; }
   .shop-caption-wrapper { margin-top: -120px; }
 }
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .shop {
+    margin-top: -100px;
+    padding: 150px 20px 60px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+  }
+  .shop__image { height: 250px; }
+}
 </style>
