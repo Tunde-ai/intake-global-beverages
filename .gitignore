@@ -22,3 +22,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+public/assets/video/intake-aromatech.mp4
+public/assets/video/waterfall-hero-4k.mp4
