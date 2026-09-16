@@ -95,8 +95,8 @@
 /* Landscape mobile */
 @media (max-height: 500px) and (orientation: landscape) {
   .athletes__grid { grid-template-columns: 1fr; }
-  .athletes__panel { max-height: none; }
-  .athletes__photo { width: 100%; height: auto; object-fit: contain; }
+  .athletes__panel { max-height: 100svh; overflow: hidden; }
+  .athletes__photo { width: 100%; height: 100svh; object-fit: cover; object-position: center top; }
   .athletes__panel--sustains .athletes__photo { transform: none; }
   .athletes__heading { font-size: 56px; }
   .athletes__sub { font-size: 18px; }
