@@ -145,13 +145,23 @@
     top: 80px;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,0.95);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1rem 0;
   }
   .nav.is-open .nav__list {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+  .nav.is-open .nav__link {
+    color: #489FB4;
+  }
+  .nav.is-open .nav__link:hover,
+  .nav.is-open .nav__link:active {
+    color: #7F7F7F;
   }
 }
 </style>
