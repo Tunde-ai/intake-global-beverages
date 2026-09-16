@@ -41,8 +41,15 @@
 }
 .athletes__photo {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+/* Sustains — scale man moderately larger */
+.athletes__panel--sustains .athletes__photo {
+  object-position: center 15%;
+  transform: scale(1.18);
+  transform-origin: center 25%;
 }
 .athletes__text {
   position: absolute;
@@ -78,7 +85,8 @@
 
 @media (max-width: 768px) {
   .athletes__grid { grid-template-columns: 1fr; }
-  .athletes__panel { }
+  .athletes__panel { max-height: none; }
+  .athletes__photo { height: auto; object-fit: contain; }
   .athletes__heading { font-size: 48px; }
   .athletes__sub { font-size: 16px; }
 }
