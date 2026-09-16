@@ -91,4 +91,14 @@
   .athletes__heading { font-size: 48px; }
   .athletes__sub { font-size: 16px; }
 }
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .athletes__grid { grid-template-columns: 1fr; }
+  .athletes__panel { max-height: none; }
+  .athletes__photo { width: 100%; height: auto; object-fit: contain; }
+  .athletes__panel--sustains .athletes__photo { transform: none; }
+  .athletes__heading { font-size: 56px; }
+  .athletes__sub { font-size: 18px; }
+}
 </style>
