@@ -85,7 +85,9 @@
 
 @media (max-width: 768px) {
   .athletes__grid { grid-template-columns: 1fr; }
-  .athletes__panel { max-height: 500px; }
+  .athletes__panel { max-height: none; }
+  .athletes__photo { height: auto; object-fit: contain; object-position: center; }
+  .athletes__panel--sustains .athletes__photo { transform: none; }
   .athletes__heading { font-size: 48px; }
   .athletes__sub { font-size: 16px; }
 }
