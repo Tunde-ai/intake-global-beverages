@@ -164,4 +164,18 @@
     color: #7F7F7F;
   }
 }
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .header.is-scrolled {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: none;
+  }
+  .header.is-scrolled .nav__link { color: var(--white); }
+  .header.is-scrolled .nav__link:hover { color: rgba(255, 255, 255, 0.7); }
+  .header.is-scrolled .header__social-link { color: rgba(255, 255, 255, 0.7); }
+  .header.is-scrolled .header__social-link:hover { color: var(--white); }
+}
 </style>
