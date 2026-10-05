@@ -214,12 +214,12 @@ import Footer from '../components/Footer.astro';
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  max-width: 1100px;
+  aspect-ratio: 16 / 9;
+  max-width: 1200px;
   margin: 0 auto 3rem;
   align-items: stretch;
 }
 .event-card__flyer {
-  aspect-ratio: 16 / 9;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
@@ -484,6 +484,7 @@ import Footer from '../components/Footer.astro';
   .events__heading { font-size: 48px; letter-spacing: 8px; }
   .event-card {
     grid-template-columns: 1fr;
+    aspect-ratio: auto;
   }
   .event-card__flyer {
     aspect-ratio: 16 / 9;
