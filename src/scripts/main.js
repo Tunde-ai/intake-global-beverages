@@ -166,6 +166,20 @@ if (shopTrack && shopPrev && shopNext && shopCarousel) {
   shopCarousel.addEventListener('touchend', onDragEnd);
 }
 
+// Paris letter — French/English toggle
+const parisBtn = document.getElementById('paris-lang-btn');
+const parisFr = document.getElementById('paris-letter-fr');
+const parisEn = document.getElementById('paris-letter-en');
+if (parisBtn && parisFr && parisEn) {
+  let showingFrench = true;
+  parisBtn.addEventListener('click', () => {
+    showingFrench = !showingFrench;
+    parisFr.classList.toggle('paris__letter--hidden', !showingFrench);
+    parisEn.classList.toggle('paris__letter--hidden', showingFrench);
+    parisBtn.textContent = showingFrench ? 'IN ENGLISH' : 'EN FRANÇAIS';
+  });
+}
+
 // Dynamic footer year
 const yearEl = document.getElementById('footer-year');
 if (yearEl) {
