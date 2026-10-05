@@ -4,7 +4,10 @@
   <div class="paris__overlay"></div>
   <div class="paris__container container">
     <div class="paris__content">
-      <h2 class="paris__title">InTake Paris - Apricot Mist</h2>
+      <div class="paris__title-row">
+        <h2 class="paris__title">InTake Paris - Apricot Mist</h2>
+        <button class="paris__lang-btn" id="paris-lang-btn">IN ENGLISH</button>
+      </div>
       <p class="paris__subtitle">Eyes of Paris, La Ville aux Mille Regards (The City of a Thousand Gazes)</p>
       <div class="paris__letter" id="paris-letter-fr">
         <p>Chers Parisiens,</p>
@@ -22,7 +25,6 @@
         <p>As southern warmth journeyed through the day, the wild beauty journeyed through the night. When they met, it was connection at first sight. All of the <strong>Eyes of Paris</strong> lit, glowing as they lay watch, each seeing in the other what they themselves could not. The sun shed tears of joy in the form of dew, pouring from the blades of leaves, watering the taste of Apricot Mist.<br>With Love,</p>
         <p class="paris__closing">&hellip;La Ville Lumi&egrave;re</p>
       </div>
-      <button class="paris__lang-btn" id="paris-lang-btn">IN ENGLISH</button>
     </div>
     <div class="paris__spacer"></div>
   </div>
@@ -55,12 +57,17 @@
   max-width: 1250px;
   transform: translateX(-100px);
 }
+.paris__title-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
 .paris__title {
   font-family: var(--font-heading);
   font-size: 59px;
   font-weight: 500;
   color: var(--white);
-  margin-bottom: 0.5rem;
 }
 .paris__subtitle {
   font-family: var(--font-accent);
@@ -98,7 +105,7 @@
   padding: 6px 20px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
-  margin-top: 0.5rem;
+  white-space: nowrap;
 }
 .paris__lang-btn:hover {
   background: rgba(72, 159, 180, 0.2);
