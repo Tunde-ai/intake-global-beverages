@@ -57,7 +57,7 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
 
-      <p class="store__note">Sign up for exclusive early access and launch-day pricing.</p>
+      <p class="store__note">Sign up for exclusive early access at launch day.<br>Contact <a href="mailto:Info@intakeglobal.com" class="store__email">Info@intakeglobal.com</a> for a quote.</p>
     </div>
   </section>
 
@@ -210,6 +210,15 @@ import Footer from '../components/Footer.astro';
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
   font-style: italic;
+  line-height: 1.8;
+}
+.store__email {
+  color: #489FB4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.store__email:hover {
+  color: var(--white);
 }
 
 @media (max-width: 900px) {
