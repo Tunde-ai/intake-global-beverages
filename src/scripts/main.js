@@ -76,10 +76,12 @@ if (shopTrack && shopPrev && shopNext && shopCarousel) {
   origSlides.forEach(s => shopTrack.appendChild(s.cloneNode(true)));
   origSlides.forEach((s, i) => shopTrack.insertBefore(origSlides[total - 1 - i].cloneNode(true), shopTrack.firstChild));
 
-  // Caption names for syncing
-  const captionNames = shopCaptionTrack
-    ? Array.from(shopCaptionTrack.querySelectorAll('.shop-caption__slide')).map(s => s.textContent)
-    : [];
+  // Clone caption slides the same way for matching infinite loop
+  if (shopCaptionTrack) {
+    const origCaptions = Array.from(shopCaptionTrack.querySelectorAll('.shop-caption__slide'));
+    origCaptions.forEach(s => shopCaptionTrack.appendChild(s.cloneNode(true)));
+    origCaptions.forEach((s, i) => shopCaptionTrack.insertBefore(origCaptions[total - 1 - i].cloneNode(true), shopCaptionTrack.firstChild));
+  }
 
   // Current index in the extended track (offset by `total` clones prepended)
   let current = total;
@@ -89,9 +91,8 @@ if (shopTrack && shopPrev && shopNext && shopCarousel) {
     shopTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
     shopTrack.style.transform = `translateX(-${current * slideWidth()}px)`;
     if (shopCaptionTrack) {
-      const realIndex = ((current - total) % total + total) % total;
       shopCaptionTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-      shopCaptionTrack.style.transform = `translateX(-${realIndex * 100}%)`;
+      shopCaptionTrack.style.transform = `translateX(-${current * 100}%)`;
     }
   }
 
