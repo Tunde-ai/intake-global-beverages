@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Store — InTake Beverages LLC">
+  <Header />
+
+  <section class="store">
+    <div class="store__bg"></div>
+    <div class="store__overlay"></div>
+
+    <div class="store__content container">
+      <h1 class="store__heading">STORE</h1>
+      <p class="store__badge">COMING SOON</p>
+      <p class="store__subtext">Available for Pre-Order</p>
+
+      <div class="store__grid">
+        <!-- Rescue -->
+        <div class="store__card">
+          <div class="store__card-glass">
+            <div class="store__card-images">
+              <img src="/intake-global-beverages/assets/solo-cans/rescue-side-1.png" alt="InTake Rescue Raspberry Aid — front" class="store__can">
+              <img src="/intake-global-beverages/assets/solo-cans/rescue-side-2.png" alt="InTake Rescue Raspberry Aid — back" class="store__can">
+            </div>
+            <h2 class="store__product-name">InTake Rescue<br><span>Raspberry Aid</span></h2>
+            <p class="store__tagline">Hydration + Recovery</p>
+            <button class="store__btn" disabled>PRE-ORDER</button>
+          </div>
+        </div>
+
+        <!-- Paris -->
+        <div class="store__card">
+          <div class="store__card-glass">
+            <div class="store__card-images">
+              <img src="/intake-global-beverages/assets/solo-cans/paris-side-1.png" alt="InTake Paris Apricot Mist — front" class="store__can">
+              <img src="/intake-global-beverages/assets/solo-cans/paris-side-2.png" alt="InTake Paris Apricot Mist — back" class="store__can">
+            </div>
+            <h2 class="store__product-name">InTake Paris<br><span>Apricot Mist</span></h2>
+            <p class="store__tagline">Elderflower + Apricot</p>
+            <button class="store__btn" disabled>PRE-ORDER</button>
+          </div>
+        </div>
+
+        <!-- Sport -->
+        <div class="store__card">
+          <div class="store__card-glass">
+            <div class="store__card-images">
+              <img src="/intake-global-beverages/assets/solo-cans/sport-inverse-side-1.png" alt="InTake Sport Blueberry Ice — front" class="store__can">
+              <img src="/intake-global-beverages/assets/solo-cans/sport-inverse-side-2.png" alt="InTake Sport Blueberry Ice — back" class="store__can">
+            </div>
+            <h2 class="store__product-name">InTake Sport<br><span>Blueberry Ice</span></h2>
+            <p class="store__tagline">Energy + Performance</p>
+            <button class="store__btn" disabled>PRE-ORDER</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="store__note">Sign up for exclusive early access and launch-day pricing.</p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+.store {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 80px;
+}
+.store__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/intake-global-beverages/assets/backgrounds/waterfall-poster.png');
+  background-size: cover;
+  background-position: center;
+}
+.store__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 50%,
+    rgba(15, 39, 87, 0.25) 0%,
+    rgba(5, 10, 25, 0.65) 70%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+.store__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.store__heading {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 12px;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+.store__badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  letter-spacing: 6px;
+  color: var(--white);
+  background: linear-gradient(135deg, rgba(72, 159, 180, 0.35), rgba(72, 159, 180, 0.15));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(72, 159, 180, 0.4);
+  border-radius: 30px;
+  padding: 8px 32px;
+  margin-bottom: 0.5rem;
+}
+.store__subtext {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+}
+
+.store__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+.store__card {
+  display: flex;
+}
+.store__card-glass {
+  flex: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(255, 255, 255, 0.02) 75%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.store__card-glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(72, 159, 180, 0.2);
+}
+.store__card-images {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.store__can {
+  height: 320px;
+  width: auto;
+  max-width: 45%;
+  object-fit: contain;
+}
+.store__product-name {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+.store__product-name span {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.store__tagline {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+.store__btn {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 10px 36px;
+  cursor: not-allowed;
+  transition: background 0.3s;
+}
+
+.store__note {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .store__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .store__heading {
+    font-size: 52px;
+    letter-spacing: 8px;
+  }
+  .store__can { height: 260px; }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .store { padding: 80px 0 40px; }
+  .store__heading { font-size: 40px; letter-spacing: 6px; }
+  .store__grid { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
+  .store__can { height: 180px; }
+  .store__product-name { font-size: 20px; }
+  .store__product-name span { font-size: 16px; }
+}
+</style>
