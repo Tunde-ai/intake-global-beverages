@@ -1,5 +1,19 @@
 // ═══ InTake Beverages — Interactions ═══
 
+// Unmute hero waterfall sound on first user interaction
+const heroVideo = document.querySelector('.hero__video');
+if (heroVideo) {
+  function unmuteHero() {
+    heroVideo.muted = false;
+    document.removeEventListener('click', unmuteHero);
+    document.removeEventListener('touchstart', unmuteHero);
+    document.removeEventListener('scroll', unmuteHero);
+  }
+  document.addEventListener('click', unmuteHero, { once: true });
+  document.addEventListener('touchstart', unmuteHero, { once: true });
+  document.addEventListener('scroll', unmuteHero, { once: true });
+}
+
 // Splash screen
 const splash = document.getElementById('splash');
 const splashDrops = document.getElementById('splash-drops');
