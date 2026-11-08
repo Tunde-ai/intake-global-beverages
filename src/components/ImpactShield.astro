@@ -44,12 +44,18 @@
 .shield__bg {
   position: absolute;
   inset: 0;
-  background: #0a0a12;
+  background-image: url('/assets/textures/water-texture.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@supports (-webkit-touch-callout: none) {
+  .shield__bg { background-attachment: scroll; }
 }
 .shield__overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 50% at 50% 30%, rgba(72, 159, 180, 0.08) 0%, transparent 70%);
+  background: var(--overlay-black);
 }
 .shield__content {
   position: relative;

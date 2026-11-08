@@ -59,12 +59,18 @@
 .rescue__bg {
   position: absolute;
   inset: 0;
-  background: #000;
+  background-image: url('/assets/textures/water-texture.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@supports (-webkit-touch-callout: none) {
+  .rescue__bg { background-attachment: scroll; }
 }
 .rescue__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 39, 87, 0.15) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: var(--overlay-black);
 }
 .rescue__content {
   position: relative;
