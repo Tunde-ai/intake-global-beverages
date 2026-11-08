@@ -1,0 +1,161 @@
+<!-- ═══ Impact Shield ═══ -->
+<section class="shield fade-in" id="impact-shield">
+  <div class="shield__bg"></div>
+  <div class="shield__overlay"></div>
+  <div class="shield__content container">
+    <div class="shield__badge-wrap">
+      <img src="/assets/campaign/impact-shield-badge.jpeg" alt="Impact Shield Badge — Honor, Courage, Sacrifice — Remember 09.11.01" class="shield__badge" loading="lazy">
+    </div>
+
+    <h2 class="shield__heading">IMPACT SHIELD</h2>
+    <p class="shield__sub">An InTake Impact Corp. Initiative</p>
+    <p class="shield__motto">&ldquo;Honoring Those Who Protect Our Home and Homeland.&rdquo;</p>
+
+    <div class="shield__divider"></div>
+
+    <h3 class="shield__section-title">SERVICE UNITES US.</h3>
+    <div class="shield__body">
+      <p>Our IMPACT SHIELD initiative is dedicated to honoring, supporting, and uniting those who protect our communities and our country &mdash; including active-duty military personnel, Veterans, EMS professionals, firefighters, law enforcement officers, and Gold Star families.</p>
+      <p>Built upon three foundational pillars:</p>
+    </div>
+
+    <div class="shield__pillars">
+      <span class="shield__pillar">AWARENESS</span>
+      <span class="shield__pillar-dot">&bull;</span>
+      <span class="shield__pillar">MUTUAL AID</span>
+      <span class="shield__pillar-dot">&bull;</span>
+      <span class="shield__pillar">COMMUNITY AFFAIRS</span>
+    </div>
+
+    <p class="shield__action">IMPACT SHIELD transforms recognition into meaningful action.</p>
+
+    <div class="shield__body">
+      <p>Through direct assistance, recognition events, public service announcements, strategic partnerships, and community activations, we raise awareness of those who serve, mobilize resources when support is needed, and bring communities together to honor their courage, sacrifice, and commitment to service.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.shield {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0;
+}
+.shield__bg {
+  position: absolute;
+  inset: 0;
+  background: #0a0a12;
+}
+.shield__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 30%, rgba(72, 159, 180, 0.08) 0%, transparent 70%);
+}
+.shield__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.shield__badge-wrap {
+  max-width: 220px;
+  margin: 0 auto 2rem;
+}
+.shield__badge {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 20px rgba(192, 160, 80, 0.3));
+}
+.shield__heading {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 6px;
+  margin-bottom: 0.25rem;
+}
+.shield__sub {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 1rem;
+}
+.shield__motto {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  color: #489FB4;
+  margin-bottom: 2rem;
+}
+.shield__divider {
+  width: 90px;
+  height: 2px;
+  background: rgba(192, 160, 80, 0.4);
+  margin: 2rem auto;
+}
+.shield__section-title {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+}
+.shield__body {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.shield__body p {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--white);
+  margin-bottom: 1.25rem;
+}
+.shield__pillars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 1.5rem auto 2rem;
+}
+.shield__pillar {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  color: #c0a050;
+  letter-spacing: 4px;
+}
+.shield__pillar-dot {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.shield__action {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 600;
+  color: #489FB4;
+  margin-bottom: 2rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .shield { padding: 4rem 0; }
+  .shield__badge-wrap { max-width: 160px; }
+  .shield__heading { font-size: 36px; letter-spacing: 4px; }
+  .shield__motto { font-size: 18px; }
+  .shield__section-title { font-size: 24px; }
+  .shield__body p { font-size: 16px; }
+  .shield__pillars { flex-direction: column; gap: 0.5rem; }
+  .shield__pillar-dot { display: none; }
+  .shield__pillar { font-size: 20px; }
+}
+</style>

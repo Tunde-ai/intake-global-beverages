@@ -13,6 +13,10 @@ import Footer from '../components/Footer.astro';
 
     <div class="store__content container">
       <h1 class="store__heading">STORE</h1>
+      <p class="store__motto">&ldquo;More Than Products. A Promise of Progress.&rdquo;</p>
+      <p class="store__intro">The flagship product of InTake Global &amp; Beverages, InTake Energy + Water, fuels the difference by combining hydration and energy in one innovative beverage.</p>
+      <p class="store__intro">Thoughtfully formulated to deliver refreshing hydration and a boost of energy, InTake brings together convenience, functionality, and great taste to complement today&rsquo;s active lifestyles.</p>
+      <p class="store__energy-tag">&ldquo;Energy That Reflects You.&rdquo;</p>
       <p class="store__badge">COMING SOON</p>
       <p class="store__subtext">Available for Pre-Order</p>
 
@@ -102,6 +106,32 @@ import Footer from '../components/Footer.astro';
   letter-spacing: 12px;
   color: var(--white);
   margin-bottom: 0.25rem;
+}
+.store__motto {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  color: #489FB4;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.store__intro {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+.store__energy-tag {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: #489FB4;
+  margin-bottom: 2rem;
 }
 .store__badge {
   display: inline-block;
