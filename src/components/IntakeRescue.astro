@@ -7,6 +7,11 @@
     <h3 class="rescue__subheading">RASPBERRY AIDE</h3>
     <p class="rescue__tagline">ENERGY + HYDRATION WITH PURPOSE</p>
 
+    <div class="rescue__cans">
+      <img src="/assets/solo-cans/rescue-side-1.png" alt="InTake Rescue Raspberry Aide — front" class="rescue__can">
+      <img src="/assets/solo-cans/rescue-side-2.png" alt="InTake Rescue Raspberry Aide — back" class="rescue__can">
+    </div>
+
     <div class="rescue__divider"></div>
 
     <p class="rescue__motto">&ldquo;MORE THAN PRODUCTS. A PROMISE OF PROGRESS.&rdquo;</p>
@@ -92,6 +97,20 @@
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: 4px;
   margin-bottom: 2rem;
+}
+.rescue__cans {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto 1rem;
+  max-width: 500px;
+}
+.rescue__can {
+  height: 380px;
+  width: auto;
+  max-width: 44%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.5));
 }
 .rescue__divider {
   width: 90px;
@@ -181,6 +200,7 @@
 
 @media (max-width: 768px) {
   .rescue { padding: 4rem 0; }
+  .rescue__can { height: 260px; }
   .rescue__heading { font-size: 36px; }
   .rescue__subheading { font-size: 24px; }
   .rescue__section-title { font-size: 24px; }
