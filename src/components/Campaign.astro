@@ -10,6 +10,14 @@
     <p class="campaign__text">Our mission extends beyond creating beverages. We strive to inspire meaningful connections, celebrate individuality, and promote positive social impact through every product, partnership, and experience.</p>
     <p class="campaign__tagline"><em>A Taste You Can Enjoy Mindfully.</em></p>
 
+    <!-- Mitch Richmond Testimonial -->
+    <div class="campaign__video-wrap">
+      <video class="campaign__video" controls preload="metadata">
+        <source src="/assets/video/mitch-richmond-testimonial.mp4" type="video/mp4">
+      </video>
+      <p class="campaign__video-caption">NBA Hall of Famer Mitch &ldquo;The Rock&rdquo; Richmond on InTake Global &amp; Beverages</p>
+    </div>
+
     <!-- Campaign Images -->
     <div class="campaign__images">
       <div class="campaign__image-wrap">
@@ -91,6 +99,23 @@
   font-weight: 500;
   color: #489FB4;
   margin-bottom: 3rem;
+}
+.campaign__video-wrap {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+.campaign__video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px rgba(67, 183, 205, 0.15);
+}
+.campaign__video-caption {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.75rem;
 }
 .campaign__images {
   display: grid;
